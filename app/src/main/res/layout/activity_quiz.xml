@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    tools:context="com.example.mishk.bbq.QuizActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/machine" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/header"
+            android:textAllCaps="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/question1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/question1"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q1a1"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton1Clicked"
+                    android:text="@string/q1a1"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/q1a2"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton1Clicked"
+                    android:text="@string/q1a2"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/q1a3"
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton1Clicked"
+                    android:text="@string/q1a3"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/question2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/question2"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="55dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q2a1"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton2Clicked"
+                    android:text="@string/q2a1"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/q2a2"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton2Clicked"
+                    android:text="@string/q2a2"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/q2a3"
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton2Clicked"
+                    android:text="@string/q2a3"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/question3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/question3"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="55dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q3a1"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton3Clicked"
+                    android:text="@string/q3a1"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/q3a2"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton3Clicked"
+                    android:text="@string/q3a2"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/q3a3"
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton3Clicked"
+                    android:text="@string/q3a3"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/question4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/q4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/question4"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="55dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q4a1"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton4Clicked"
+                    android:text="@string/q4a1"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/q4a2"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton4Clicked"
+                    android:text="@string/q4a2"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/q4a3"
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton4Clicked"
+                    android:text="@string/q4a3"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/question5"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/q5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/question5"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp">
+
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="onCheckboxClicked"
+                    android:text="@string/q5a1"
+                    android:buttonTint="@android:color/holo_red_light"/>
+
+                <CheckBox
+                    android:id="@+id/checkbox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="onCheckboxClicked"
+                    android:text="@string/q5a2"
+                    android:buttonTint="@android:color/holo_red_light"/>
+
+                <CheckBox
+                    android:id="@+id/checkbox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:onClick="onCheckboxClicked"
+                    android:text="@string/q5a3"
+                    android:buttonTint="@android:color/holo_red_light"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/question6"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/q6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/question6"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q6a1"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton6Clicked"
+                    android:text="@string/q6a1"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/q6a2"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton6Clicked"
+                    android:text="@string/q6a2"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/q6a3"
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton6Clicked"
+                    android:text="@string/q6a3"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/q7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/question7"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/question7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="40dp"
+                android:hint="Beverage type"
+                android:textSize="12sp"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/question8"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/q8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/question8"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q8a1"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton8Clicked"
+                    android:text="@string/q8a1"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/q8a2"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton8Clicked"
+                    android:text="@string/q8a2"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/q8a3"
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton8Clicked"
+                    android:text="@string/q8a3"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/question9"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/q9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/question9"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q9a1"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton9Clicked"
+                    android:text="@string/q9a1"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/q9a2"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton9Clicked"
+                    android:text="@string/q9a2"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/q9a3"
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton9Clicked"
+                    android:text="@string/q9a3"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/question10"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/q10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/question10"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q10a1"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton10Clicked"
+                    android:text="@string/q9a1"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/q10a2"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton10Clicked"
+                    android:text="@string/q10a2"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/q10a3"
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:onClick="onRadioButton10Clicked"
+                    android:text="@string/q10a3"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/holo_red_light"
+            android:onClick="displayScore"
+            android:padding="10dp"
+            android:text="@string/button2_text"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</ScrollView>
